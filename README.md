@@ -84,6 +84,13 @@ It's up to the user to calculate the right withdrawal root to complete their wit
 
 Tests are provided to cover all the basic scenarios.
 
+### Functions
+
+ - during deposit user calls [depositAsset](https://github.com/randomlogin/restaking-token/blob/main/contracts/LRTDepositPool.sol#L113).
+ - to initiate a withdrawal — [initiateWithdrawal](https://github.com/randomlogin/restaking-token/blob/main/contracts/LRTDepositPool.sol#L134), 
+ - [queue withdrawal inside NodeDelegator](https://github.com/randomlogin/restaking-token/blob/main/contracts/NodeDelegator.sol#L124)
+ - to complete withdrawal [completeWithdrawal](https://github.com/randomlogin/restaking-token/blob/main/contracts/NodeDelegator.sol#L161) is called.
+
 ### MyRSETH token and rewards
 
 The `MyRSETH` token is minted for a user when they make a deposit of stETH token. It is a rebasing token, which tracks the rewards gained from the Lido protocol. As it is a rebasing token (i.e., it tracks the number of shares of something), it is susceptible to rounding errors, and the balances might have slight fluctuations.
