@@ -22,7 +22,7 @@ npm i
 
 ### Run
 
-A fork of the mainnet (before a rebase transaction of Lido protocol) is used during the local run. Using Hardhat for its fixtures, and during tests, it proved to be faster.
+A fork of the mainnet (before a rebase transaction of Lido protocol) is used during the local run. Using Hardhat for its fixtures. Also during tests it proved to be faster.
 
 Start the node in other terminal (localhost network):
 ```
