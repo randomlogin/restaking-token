@@ -13,7 +13,7 @@ are written for Forge, and it's used even after added modifications.
 
 However, the deliverables are intended to be JS scripts; therefore, Hardhat is used.
 
-Build:
+### Build
 ```
 forge b
 npm i
@@ -24,7 +24,7 @@ npm i
 
 A fork of the mainnet (before a rebase transaction of Lido protocol) is used during the local run. Using Hardhat for its fixtures, and during tests, it proved to be faster.
 
-Start node (localhost network):
+Start the node in other terminal (localhost network):
 ```
 npx hardhat run
 ```
