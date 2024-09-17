@@ -26,7 +26,7 @@ A fork of the mainnet (before a rebase transaction of Lido protocol) is used dur
 
 Start the node in other terminal (localhost network):
 ```
-npx hardhat run
+npx hardhat node --network localhost
 ```
 
 Deploy the contracts locally:
